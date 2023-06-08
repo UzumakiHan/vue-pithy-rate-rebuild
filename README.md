@@ -2,7 +2,7 @@
 
 ### vue-pithy-rate@0.1.3 发现在vue3中使用不了，因为是2年前编写的组件库，使用webpack进行打包构建，可能一些构建上的语法不兼容vue3，这次重构就用了rollup进行打包构建，进测试，兼容vue2和vue3，且包体积减少了。
 
-### vue-pithy-calendar@0.1.2
+### vue-pithy-rate@0.1.3
 
 **下载**
 
