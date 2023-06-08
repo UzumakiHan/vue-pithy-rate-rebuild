@@ -103,7 +103,7 @@ const handleUpdateScore = (scoreNum)=>{
 | starSize | Number |    否    |        星星大小    |  16 |
 | scoreColor | String |    否    |        评分颜色    |  #000 |
 
-
+备注:starColor starSize scoreColor为V1.0.0新增的参数
 
 效果：
 
