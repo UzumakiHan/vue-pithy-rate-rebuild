@@ -10,19 +10,9 @@
 npm i vue-pithy-rate@0.1.3 -D
 ```
 
-**引入**
-```js
-//main.js
-import VuePithyRate from 'vue-pithy-rate'
-
-import 'vue-pithy-rate/dist/vue-pithy-rate.css'
-
-Vue.use(VuePithyRate)
-```
 
 **使用**
 ```js
-//vue2
 <template>
   <div id="app">
     <!-- 可评分，显示分数 -->
@@ -35,8 +25,12 @@ Vue.use(VuePithyRate)
 </template>
 
 <script>
+import VuePithyRate from 'vue-pithy-rate'
+
+import 'vue-pithy-rate/dist/vue-pithy-rate.css'
 export default {
   name: "App",
+  components:{VuePithyRate},
   data() {
     return {
       score: 0,
@@ -66,6 +60,42 @@ npm i vue-pithy-rate@latest -D
 ```
 
 **使用**
+```js
+//vue2
+<template>
+  <div id="app">
+    <!-- 可评分，显示分数 -->
+     <vue-pithy-rate :score.sync="score" showScore      @handleUpdateScore="handleUpdateScore"/>
+    <!-- 只读，不显示分数 -->
+    <vue-pithy-rate :score="1.5" disabled />
+    <!-- 只读，显示分数 -->
+    <vue-pithy-rate :score="3.6" disabled showScore />
+  </div>
+</template>
+
+<script>
+import VuePithyRate from 'vue-pithy-rate/dist/vue2/esm'
+
+export default {
+  name: "App",
+  components:{VuePithyRate},
+  data() {
+    return {
+      score: 0,
+    };
+  },
+    methods:{
+        handleUpdateScore(scoreNum){
+        this.score = scoreNum
+       }
+    }
+};
+</script>
+
+<style>
+</style>
+```
+
 ```js
 //vue3
 <template>
