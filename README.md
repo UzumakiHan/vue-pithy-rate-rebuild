@@ -102,9 +102,11 @@ const handleUpdateScore = (scoreNum)=>{
 | starColor | String |    否    |        星星颜色    | #000 | 
 | starSize | Number |    否    |        星星大小    |  16 |
 | scoreColor | String |    否    |        评分颜色    |  #000 |
+| handleUpdateScore | Function |    否    |    点击星星返回的评分        |  无 |
+
 
 备注:starColor starSize scoreColor为V1.0.0新增的参数
 
 效果：
 
-![](https://i.loli.net/2021/05/11/B3QyHCUxEe9cji4.png)
+![截图示例](https://i.loli.net/2021/05/11/B3QyHCUxEe9cji4.png)
